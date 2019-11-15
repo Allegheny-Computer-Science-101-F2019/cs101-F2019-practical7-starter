@@ -27,10 +27,8 @@ public class QuickSort extends Sorter {
   public char[] sort(char[] source) {
     int length = source.length;
     char[] sorted = new char[source.length];
-    // call arraycopy
-    System.arraycopy(source, 0, sorted, 0, source.length);
-    // call the built-in sorting method
-    Arrays.sort(sorted);
+    // TODO: perform an arraycopy from the source to the sorted arrays
+    // TODO: call the built-in sorting method that leverages QuickSort
     return sorted;
   }
 
@@ -46,10 +44,8 @@ public class QuickSort extends Sorter {
   public int[] sort(int[] source) {
     int length = source.length;
     int[] sorted = new int[source.length];
-    // call arraycopy
-    System.arraycopy(source, 0, sorted, 0, source.length);
-    // call the built-in sorting method
-    Arrays.sort(sorted);
+    // TODO: perform an arraycopy from the source to the sorted arrays
+    // TODO: call the built-in sorting method that leverages QuickSort
     return sorted;
   }
 
@@ -64,4 +60,5 @@ public class QuickSort extends Sorter {
     int[] sortedNumbers = (new QuickSort()).sort(numbers);
     System.out.println("After : " + java.util.Arrays.toString(sortedNumbers));
   }
+
 }
